@@ -26,7 +26,7 @@ spec:
   type: LoadBalancer
   ports:
     - name: "responder"
-      port: 80
+      port: 5042
       targetPort: 5042
   selector:
     app: myapp
