@@ -16,7 +16,7 @@ spec:
       - name: myapp
         image: msrrepo1.azurecr.io/poc/sampleapp:0.1
         ports:
-        - containerPort: 80
+        - containerPort: 5042
 ---
 apiVersion: v1
 kind: Service
@@ -27,6 +27,6 @@ spec:
   ports:
     - name: "responder"
       port: 80
-      targetPort: 80
+      targetPort: 5042
   selector:
     app: myapp
