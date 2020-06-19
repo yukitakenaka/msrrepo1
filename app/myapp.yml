@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: msrrepo1.azurecr.io/poc/sampleapp:0.1
+        image: msrrepo1.azurecr.io/poc/sampleapp:0.4
         ports:
         - containerPort: 80
 ---
